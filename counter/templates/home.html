@@ -126,18 +126,7 @@
                     labels: ['carbohydrates', 'Cholesterol', 'Saturated fat', 'Total Fat', 'Fiber Content', 'Potassium', 'Protein','Sodium','Sugar'],
                     datasets: [{
                         label: 'Nutritional values of {{api.0.name | capfirst}}',
-                        data: [
-                            {{ api.0.carbohydrates_total_g|default:0 }},
-                            {{ api.0.cholesterol_mg|default:0 }},
-                            {{ api.0.fat_saturated_g|default:0 }},
-                            {{ api.0.fat_total_g|default:0 }},
-                            {{ api.0.fiber_g|default:0 }},
-                            {{ api.0.potassium_mg|default:0 }},
-                            {{ api.0.protein_g|default:0 }},
-                            {{ api.0.sodium_mg|default:0 }},
-                            {{ api.0.sugar_g|default:0 }},
-                            ],
-
+                      
                         backgroundColor: [
                             'rgba(255, 99, 132, 0.2)',
                             'rgba(54, 162, 235, 0.2)',
